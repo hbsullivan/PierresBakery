@@ -41,10 +41,13 @@ namespace PierreBakery
 
     public int PastryPrice()
     {
-      int pastries = 0;
-      if (PastryNumber == 1){
-        pastries += 2;
-      }
+      int nonDiscount = (PastryNumber % 3);
+      int normalPrice = (nonDiscount) * 2;
+
+      int discount = (PastryNumber - nonDiscount);
+      int discountPrice = (discount * 5)/3;
+      int pastries = normalPrice + discountPrice;
+      
       return pastries;
     }
   }

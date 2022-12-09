@@ -76,9 +76,9 @@ namespace PierreBakery.Tests
     [TestMethod]
     public void PastryPrice_ReturnPriceOfPastry_Int()
     {
-      string stringPastryNumber = "5";
+      string stringPastryNumber = "4";
       Pastry newPastry = new Pastry(stringPastryNumber);
-      int expected = 9;
+      int expected = 7;
       int result = newPastry.PastryPrice();
       Assert.AreEqual(expected, result);
     }
