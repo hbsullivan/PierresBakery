@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierreBakery;
+using System;
 
 namespace PierreBakery.Tests
 {
@@ -18,6 +19,16 @@ namespace PierreBakery.Tests
     {
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+
+    [TestMethod]
+    public void GetBreadNumber_ReturnsBreadNumber_Int()
+    {
+      string stringBreadNumber = "5";
+      int breadNumber = int.Parse(stringBreadNumber);
+      Bread newBread = new Bread();
+      string result = newBread.BreadNumber;
+      Assert.AreEqual(breadNumber, result);
     }
   }
 }
