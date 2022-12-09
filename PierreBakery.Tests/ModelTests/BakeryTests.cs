@@ -41,27 +41,27 @@ namespace PierreBakery.Tests
       Assert.AreEqual(pastryNumber, result);
     }
 
-    // [TestMethod]
-    // public void BreadPrice_ReturnBreadPrice_Int()
-    // {
-    //   string stringBreadNumber = "1";
-    //   Bread newBread = new Bread(stringBreadNumber);
-    //   int expected = 5;
-    //   int result = newBread.BreadPrice();
-    //   Assert.AreEqual(expected, result);
+    [TestMethod]
+    public void BreadPrice_ReturnBreadPrice_Int()
+    {
+      string stringBreadNumber = "1";
+      Bread newBread = new Bread(stringBreadNumber);
+      int expected = 5;
+      int result = newBread.BreadPrice();
+      Assert.AreEqual(expected, result);
       
-    // }
+    }
 
-    //   [TestMethod]
-    // public void BreadPrice_ReturnBreadPriceWithDiscount_Int()
-    // {
-    //   string stringBreadNumber = "5";
-    //   Bread newBread = new Bread(stringBreadNumber);
-    //   int expected = 20;
-    //   int result = newBread.BreadPrice();
-    //   Assert.AreEqual(expected, result);
-      
-    // }
+      [TestMethod]
+    public void BreadPrice_ReturnBreadPriceWithDiscount_Int()
+    {
+      string stringBreadNumber = "5";
+      Bread newBread = new Bread(stringBreadNumber);
+      int expected = 20;
+      int result = newBread.BreadPrice();
+      Assert.AreEqual(expected, result);
+
+    }
 
     [TestMethod]
     public void PastryPrice_ReturnPriceOfOnePastry_Int()

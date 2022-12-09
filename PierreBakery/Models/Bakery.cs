@@ -9,24 +9,24 @@ namespace PierreBakery
       BreadNumber = int.Parse(stringBreadNumber);
     }
 
-    // public int BreadPrice()
-    // {
-    //   int counter = 0;
-    //   if (BreadNumber <= 2)
-    //   {
-    //     counter = BreadNumber*5;
-    //   } else {
-    //     counter = BreadNumber*5;
-    //   for (int i=1; i < BreadNumber; i+=3)
-    //   {
-    //       counter -= 5;
-    //   }
-    //   }
-    //   return counter;
+    public int BreadPrice()
+    {
+      int counter = 0;
+      if (BreadNumber <= 2)
+      {
+        counter = BreadNumber*5;
+      } else {
+        counter = BreadNumber*5;
+      for (int i=1; i < BreadNumber; i+=3)
+      {
+          counter -= 5;
+      }
+      }
+      return counter;
       
       
     
-    // }
+    }
 
   }
 
