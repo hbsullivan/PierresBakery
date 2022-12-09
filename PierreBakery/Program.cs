@@ -8,7 +8,7 @@ namespace UserInterface
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierre's Bakery!");
-      Console.WriteLine("We have Bread ($5/loaf) and Pastries ($2) available.");
+      Console.WriteLine("We have Bread ($5/loaf) and Pastries ($2/pastry) available.");
       Console.WriteLine("Check out our deals!");
       Console.WriteLine("Buy 2 loaves of bread, get 1 free!");
       Console.WriteLine("3 Pastries for $5!");
