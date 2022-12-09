@@ -23,7 +23,6 @@ namespace PierreBakery.Models
       }
       }
       return counter;
-      
     }
 
   }
@@ -41,7 +40,6 @@ namespace PierreBakery.Models
     {
       int nonDiscount = (PastryNumber % 3);
       int normalPrice = (nonDiscount) * 2;
-
       int discount = (PastryNumber - nonDiscount);
       int discountPrice = (discount * 5)/3;
       int pastries = normalPrice + discountPrice;
