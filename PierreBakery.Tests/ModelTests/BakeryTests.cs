@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierreBakery;
+using PierreBakery.Models;
 using System;
 
 namespace PierreBakery.Tests
@@ -55,9 +55,9 @@ namespace PierreBakery.Tests
       [TestMethod]
     public void BreadPrice_ReturnBreadPriceWithDiscount_Int()
     {
-      string stringBreadNumber = "5";
+      string stringBreadNumber = "9";
       Bread newBread = new Bread(stringBreadNumber);
-      int expected = 20;
+      int expected = 30;
       int result = newBread.BreadPrice();
       Assert.AreEqual(expected, result);
 

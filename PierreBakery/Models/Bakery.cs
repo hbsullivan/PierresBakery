@@ -1,4 +1,4 @@
-namespace PierreBakery
+namespace PierreBakery.Models
 {
   public class Bread
   {
@@ -17,15 +17,13 @@ namespace PierreBakery
         counter = BreadNumber*5;
       } else {
         counter = BreadNumber*5;
-      for (int i=1; i < BreadNumber; i+=3)
+      for (int i=1; i < BreadNumber - 1; i+=3)
       {
-          counter -= 5;
+        counter -= 5;
       }
       }
       return counter;
       
-      
-    
     }
 
   }
