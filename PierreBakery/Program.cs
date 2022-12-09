@@ -20,7 +20,7 @@ namespace UserInterface
       Pastry newPastry = new Pastry(stringPastryNumber);
       Console.WriteLine("The price of your pastries is $" + newPastry.PastryPrice());
 
-      
+      Console.WriteLine("The total price of your order is $" + (newBread.BreadPrice()+newPastry.PastryPrice()));
 
       
     }
