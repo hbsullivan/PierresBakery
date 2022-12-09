@@ -10,7 +10,7 @@ namespace PierreBakery.Tests
     [TestMethod]
     public void CreateBreadClass_CreateClass_BreadClass()
     {
-      Bread newBread = new Bread();
+      Bread newBread = new Bread("5");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
@@ -25,9 +25,9 @@ namespace PierreBakery.Tests
     public void GetBreadNumber_ReturnsBreadNumber_Int()
     {
       string stringBreadNumber = "5";
+      Bread newBread = new Bread(stringBreadNumber);
       int breadNumber = int.Parse(stringBreadNumber);
-      Bread newBread = new Bread();
-      string result = newBread.BreadNumber;
+      int result = newBread.BreadNumber;
       Assert.AreEqual(breadNumber, result);
     }
   }
