@@ -82,5 +82,17 @@ namespace PierreBakery.Tests
       int result = newPastry.PastryPrice();
       Assert.AreEqual(expected, result);
     }
+
+    [TestMethod]
+    public void TotalPrice_ReturnTotalPrice_Int()
+    {
+      string stringPastryNumber = "4";
+      Pastry newPastry = new Pastry(stringPastryNumber);
+      string stringBreadNumber = "9";
+      Bread newBread = new Bread(stringBreadNumber);
+      int expected = 37;
+      int result = newPastry.PastryPrice() + newBread.BreadPrice(); 
+      Assert.AreEqual(expected, result);
+    }
   }
 }
