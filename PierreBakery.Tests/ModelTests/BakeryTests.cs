@@ -44,9 +44,20 @@ namespace PierreBakery.Tests
     [TestMethod]
     public void BreadPrice_ReturnBreadPriceIfLessThanTwoLoaves_Int()
     {
-      string stringBreadNumber = "3";
+      string stringBreadNumber = "1";
       Bread newBread = new Bread(stringBreadNumber);
-      int expected = 10;
+      int expected = 5;
+      int result = newBread.BreadPrice();
+      Assert.AreEqual(expected, result);
+      
+    }
+
+      [TestMethod]
+    public void BreadPrice_ReturnBreadPrice_Int()
+    {
+      string stringBreadNumber = "5";
+      Bread newBread = new Bread(stringBreadNumber);
+      int expected = 20;
       int result = newBread.BreadPrice();
       Assert.AreEqual(expected, result);
       
