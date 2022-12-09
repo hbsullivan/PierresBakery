@@ -9,21 +9,24 @@ namespace PierreBakery
       BreadNumber = int.Parse(stringBreadNumber);
     }
 
-    public int BreadPrice()
-    {
-      int counter = 0;
-      for (int i=0; i < BreadNumber; i++)
-      {
-        if ((i % 3) == 0)
-        {
-          counter += 0;
-        } else{
-          counter += 5;
-        }
-      }
+    // public int BreadPrice()
+    // {
+    //   int counter = 0;
+    //   if (BreadNumber <= 2)
+    //   {
+    //     counter = BreadNumber*5;
+    //   } else {
+    //     counter = BreadNumber*5;
+    //   for (int i=1; i < BreadNumber; i+=3)
+    //   {
+    //       counter -= 5;
+    //   }
+    //   }
+    //   return counter;
       
-      return counter;
-    }
+      
+    
+    // }
 
   }
 
@@ -34,6 +37,15 @@ namespace PierreBakery
     public Pastry(string stringPastryNumber)
     {
       PastryNumber = int.Parse(stringPastryNumber);
+    }
+
+    public int PastryPrice()
+    {
+      int pastries = 0;
+      if (PastryNumber == 1){
+        pastries += 2;
+      }
+      return pastries;
     }
   }
 }
