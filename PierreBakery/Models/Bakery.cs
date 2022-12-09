@@ -14,13 +14,17 @@ namespace PierreBakery
       int counter = 0;
       for (int i=0; i < BreadNumber; i++)
       {
-        if (i < 3)
+        if ((i % 3) == 0)
         {
+          counter += 0;
+        } else{
           counter += 5;
         }
       }
+      
       return counter;
     }
+
   }
 
   public class Pastry

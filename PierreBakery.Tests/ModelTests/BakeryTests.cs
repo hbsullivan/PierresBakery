@@ -42,7 +42,7 @@ namespace PierreBakery.Tests
     }
 
     [TestMethod]
-    public void BreadPrice_ReturnBreadPriceIfLessThanTwoLoaves_Int()
+    public void BreadPrice_ReturnBreadPrice_Int()
     {
       string stringBreadNumber = "1";
       Bread newBread = new Bread(stringBreadNumber);
@@ -53,7 +53,7 @@ namespace PierreBakery.Tests
     }
 
       [TestMethod]
-    public void BreadPrice_ReturnBreadPrice_Int()
+    public void BreadPrice_ReturnBreadPriceWithDiscount_Int()
     {
       string stringBreadNumber = "5";
       Bread newBread = new Bread(stringBreadNumber);
